@@ -100,7 +100,7 @@ var Engine = (function(global) {
 
     function gameWon(){
         if(player.locY == PLAYER_MIN_Y_LOC){
-
+            $("#win").show();
         }
     }
 
