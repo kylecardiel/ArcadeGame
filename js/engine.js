@@ -84,6 +84,7 @@ var Engine = (function(global) {
         gameWon();
     }
 
+    //This function checks wether the player and an enemy collide. By looping through all enemys
     function checkCollisions(){
         allEnemies.forEach(function(enemy) {
             if(collision(player, enemy)) {
@@ -92,12 +93,13 @@ var Engine = (function(global) {
         });
     }
 
-
+    //This function checks wether the player and an enemy collide.
     function collision(player, enemy){
         return  (player.locX < enemy.locX + ENEMY_LENGTH && player.locX + PLAYER_LENGTH > enemy.locX &&
                  player.locY < enemy.locY + ENEMY_HEIGHT && player.locY + PLAYER_HEIGHT > enemy.locY)
     }
 
+    //This function determines if the player has won the game and uses jquery to inform the player if they have.
     function gameWon(){
         if(player.locY == PLAYER_MIN_Y_LOC){
             $("#win").show();
