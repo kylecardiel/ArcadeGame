@@ -1,6 +1,17 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-Students should use this [rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2696458597/m-2687128535) for self-checking their submission.
+How to run:
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+Download or clone the repository.
+Open index.html in browser.
+Game starts automatically.
+
+
+Goal of Gamee:
+Move player from grass to wter without getting touched by a bug.
+
+How to Play:
+Users can move their player left, right, up, down with the arrow keys.
+When a user touches a bug they are send back to the starting postion in the grass.
+
